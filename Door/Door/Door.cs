@@ -12,11 +12,13 @@ namespace Door
         public void Open()
         {
             Console.WriteLine("Door is opening");
+            
+
         }
 
-        public void Closed()
+        public void Close()
         {
-            Console.Writeline("Door has been closed")
+            Console.WriteLine("Door has been closed");
         }
 
     }
