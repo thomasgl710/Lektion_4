@@ -9,13 +9,13 @@ namespace Door
 
         public void NotifyEntryGranted()
         {
-
+            Console.WriteLine("Entry Granted");
 
         }
 
         public void NotifyEntryDenied()
         {
-            Console.WriteLine("Hej");
+            Console.WriteLine("Entry denied");
         }
         
     }
