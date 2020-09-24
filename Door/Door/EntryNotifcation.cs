@@ -15,7 +15,7 @@ namespace Door
 
         public void NotifyEntryDenied()
         {
-
+            Console.WriteLine("Hej");
         }
         
     }
