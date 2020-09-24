@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Door
 {
-    interface IUserValidation
+    public interface IUserValidation
     {
         public bool ValidateEntryRequest(string id);
     }

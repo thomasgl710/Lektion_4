@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Door
 {
-    interface IDoors
+    public interface IDoors
     {
         void Open();
         void Close();

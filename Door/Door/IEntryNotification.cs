@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Door
 {
-    interface IEntryNotifcation
+    public interface IEntryNotifcation
     {
         void NotifyEntryGranted();
         void NotifyEntryDenied();

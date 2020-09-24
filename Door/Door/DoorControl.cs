@@ -9,10 +9,24 @@ namespace Door
    
     public class DoorControl
     {
-        IDoors _doors = new Doors();
-        IUserValidation _userValidation = new UserValidation();
-        IEntryNotifcation _entryNotifcation = new EntryNotifcation();
-        void RequestEntry(string id)
+
+        public DoorControl(IDoors door, IEntryNotifcation entry, IUserValidation userValidation)
+        {
+            _doors = door;
+            _entryNotifcation = entry;
+            _userValidation = userValidation;
+        }
+
+        IDoors _doors;
+            //= new Doors();
+        IUserValidation _userValidation;
+            //= new UserValidation();
+        IEntryNotifcation _entryNotifcation;
+        //= new EntryNotifcation();
+
+        
+
+        public void RequestEntry(string id)
         {
           bool validate =  _userValidation.ValidateEntryRequest(id);
           if (validate == true)
