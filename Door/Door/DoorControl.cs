@@ -35,10 +35,12 @@ namespace Door
               _entryNotifcation.NotifyEntryGranted();
 
               Thread.Sleep(1000);
+              _doors.Close();
           }
           else
           {
               _entryNotifcation.NotifyEntryDenied();
+             
           }
         }
 
